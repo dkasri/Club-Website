@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Slug Clubs</title>
+<link href='https://fonts.googleapis.com/css?family=Alex Brush:400,900' rel='stylesheet' type='text/css'>
+<link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+<style>
+* {box-sizing: border-box}
+.sansserif {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.fancy {
+	font-family: 'Alex Brush';
+}
+
+a.email:link {color:#ff0000;}
+a.email:hover {color:#ff0000;}
+a.email:visited {color:#ff0000;}
+
+.logo {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-left: auto;
+  	margin-right: auto;
+}
+
+.centered {
+	margin-left: auto;
+  	margin-right: auto;
+}
+
+.img-text_container{
+	position: relative;
+}
+
+.text_center{
+	position: absolute;
+  	left: 0;
+  	top: 50%;
+ 	width: 100%;
+  	text-align: center;
+  	font-size: 7vw;
+  	color: white;
+  	font-family: "URW Chancery L", cursive;
+}
+
+.imgblur{
+  background: url('https://unsplash.imgix.net/uploads/1413386993023a925afb4/4e769802?q=75&fm=jpg&s=84dfb097d39ff1600cdd32be44813650');
+  max-width:100%;
+  height:auto;
+}
+
+.hero{
+  width:100%;
+  height:700px;
+}
+
+@blVal: 8px;
+
+.blur{
+  -webkit-filter: blur(@blVal);
+  -moz-filter: blur(@blVal);
+  -o-filter: blur(@blVal);
+  -ms-filter: blur(@blVal);
+  filter: blur(@blVal);
+}
+
+img {
+  	display: block;
+	margin-left: auto;
+  	margin-right: auto;
+}
+
+body {
+  margin: 0;
+  font-size: 28px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: white;
+}
+
+#navbar {
+	width: 100%;
+  	overflow: hidden;
+  	background-color: white;
+  	z-index: 10;
+}
+
+#navbar a {
+  float: left;
+  
+  color: blue;
+  text-align: center;
+  padding: 18px;
+  width: 20%;
+  text-decoration: none;
+  font-size: 1.5vw;
+}
+
+#navbar a:hover {
+  background-color: white;
+  color: black;
+}
+
+#navbar a.active {
+  background-color: blue;
+  color: white;
+}
+
+#navbar a.active:hover {
+  background-color: #13249C;
+  color: white;
+}
+
+.content {
+  margin-top: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 65px;
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+  .sticky + .content {padding-top: 1px;}
+}
+@media screen and (max-width: 1024px) {
+  .sticky + .content {padding-top: 75px;}
+}
+</style>
+</head>
+<body>
+<a href="club-home.html">
+  <img class="logo" src="Slug Clubs.png" title="Home" alt="Slug Clubs Home" style="max-width:100%;height:auto;">
+</a>
+<!-- <img class="logo" src="woman confectioner with cake-2.png" alt="Sweet Like Me Cakes Logo" width= "250" height= "250"> -->
+<div id="navbar">
+  <a href="club-about.html" alt="About" title="About">About</a>
+  <a href="club-anime.html" alt="Anime" title="Anime">Anime</a>
+  <a class="active" href="club-home.html" alt="Home" title="Home">Home</a>
+  <a href="club-temp.html" alt="Games" title="Games">Games</a>
+  <a href="club-temp.html" alt="Contact" title="Contact">Contact</a>
+  
+</div>
+
+
+
+
+<div class="content">
+	<div class="img-text_container">
+		<img src='IMG_0537.jpeg' style= "max-width:100%;height:auto;">
+		<div class="text_center">Quality cakes<br /> for less!</div>
+	</div>
+	
+	<h1 style="font-size:4vw;">This is a Test</h1>  
+	<p style="font-size:4vw;">With CSS, you have full control over the margins. There are properties for setting the margin for each side of an element (top, right, bottom, and left).</p>
+	<p style="font-size:3vw;">With CSS, you have full control over the margins. There are properties for setting the margin for each side of an element (top, right, bottom, and left).</p>
+	<p style="font-size:2vw;">With CSS, you have full control over the margins. There are properties for setting the margin for each side of an element (top, right, bottom, and left).</p>
+	<p style="font-size:5vw;">With CSS, you have full control over the margins. There are properties for setting the margin for each side of an element (top, right, bottom, and left).</p>
+	<p style="font-size:5vw;">With CSS, you have full control over the margins. There are properties for setting the margin for each side of an element (top, right, bottom, and left).</p>
+</div>
+
+<script>
+window.onscroll = function() {myFunction()};
+<!-- window.onscroll = function() {blurfunct()}; -->
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+
+<!-- 
+function blurfunct() {
+    if ($(window).scrollTop() > 100) {
+        $(".imgblur").addClass("blur");
+    } else {
+        $(".imgblur").removeClass("blur");
+    }
+}
+-->
+
+$(window).scroll(function () {
+    if ($(window).scrollTop() > 100) {
+        $(".hero").addClass("blur");
+    } else {
+        $(".hero").removeClass("blur");
+    }
+});
+</script>
+<div>
+    <p style="text-align:center; font-size: 1.8vw; padding: 10px;">None of the characters or properties used on this site are owned or monetized by me. The site utilizes fair use
+    policies to fall within legal usage. Please contact dkasri@ucsc.edu for more details or concerns.</p>
+  </div>
+</body>
+</html>
